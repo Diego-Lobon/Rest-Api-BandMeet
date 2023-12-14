@@ -1,5 +1,5 @@
 // Importar dependecias y modulos
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const fs = require("fs");
 const path = require("path");
 
