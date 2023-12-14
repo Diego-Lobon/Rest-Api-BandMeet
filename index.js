@@ -11,7 +11,7 @@ connection();
 
 // Crear servidor node
 const app = express();
-const puerto = 80;
+const puerto = process.env.PORT || 3900;
 
 // Configurar cors
 app.use(cors());
@@ -42,6 +42,6 @@ app.get("/ruta-prueba", (req, res) => {
 
 
 // Poner servidor a escuchar peticiones http
-app.listen(puerto, () => {
+app.listen(puerto, "0.0.0.0", () => {
     console.log("Servidor de node corriendo en el puerto: ", puerto)
 })
