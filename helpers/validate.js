@@ -2,7 +2,7 @@ const validator = require("validator");
 
 const validate = (params) => {
 
-    let name = !validator.isEmpty(params.name) && 
+    /*let name = !validator.isEmpty(params.name) && 
                 validator.isLength(params.name, {min: 3, max: undefined}) &&
                 validator.isAlpha(params.name, "es-ES");
 
@@ -42,7 +42,7 @@ const validate = (params) => {
 
         console.log("validacion superada");
 
-    }
+    }*/
 
 }
 
